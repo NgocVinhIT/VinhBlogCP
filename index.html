@@ -68,6 +68,9 @@
             transition: transform 0.2s, box-shadow 0.2s;
             text-align: center;
             border-top: 4px solid var(--accent-color);
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         .card:hover {
             transform: translateY(-5px);
@@ -80,6 +83,7 @@
         .card p {
             font-size: 0.9rem;
             color: #64748b;
+            margin-bottom: 0;
         }
         footer {
             text-align: center;
@@ -99,7 +103,7 @@
     </header>
 
     <div class="container">
-        <!-- Hướng dẫn đóng góp và quy tắc tên tác giả -->
+        <!-- Hướng dẫn đóng góp -->
         <div class="notice-box">
             <strong>📢 Hướng dẫn đóng góp bài viết:</strong> Bạn muốn đóng góp hãy viết file `.md` rồi gửi qua <strong>GitHub Issues</strong> và đợi được kiểm duyệt của đội ngũ chính sau 2 ngày.<br>
             <ul class="rule-list">
@@ -108,24 +112,24 @@
             </ul>
         </div>
 
-        <!-- Các mục chính của Blog -->
+        <!-- Các mục chính của Blog (Đã gắn link chuyển trang) -->
         <div class="grid-menu">
-            <div class="card">
+            <a href="hsg-tin.html" class="card">
                 <h3>🏆 Giải đề HSG Tin</h3>
                 <p>Tổng hợp lời giải chi tiết các đề thi Học sinh giỏi Tin học các cấp.</p>
-            </div>
-            <div class="card">
+            </a>
+            <a href="blog-thuat-toan.html" class="card">
                 <h3>💡 Blog Thuật toán</h3>
                 <p>Chia sẻ kiến thức từ cơ bản đến nâng cao về cấu trúc dữ liệu và giải thuật.</p>
-            </div>
-            <div class="card">
+            </a>
+            <a href="tin-hoc-tre.html" class="card">
                 <h3>🚀 Giải đề Tin Học Trẻ</h3>
                 <p>Gỡ rối các thử thách, bài toán tư duy từ sân chơi Tin học trẻ toàn quốc.</p>
-            </div>
-            <div class="card">
+            </a>
+            <a href="cac-oj.html" class="card">
                 <h3>💻 Giải đề trên các OJ</h3>
                 <p>Kho tàng code mẫu và phân tích test case từ Codeforces, LeetCode, VNOI...</p>
-            </div>
+            </a>
         </div>
     </div>
 
