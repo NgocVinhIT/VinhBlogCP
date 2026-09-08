@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuật toán là gì? - VinhBlogCP.com</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        header a:hover {
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        .post-meta {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1rem;
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 0.75rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+        }
+        ul {
+            margin-bottom: 1.2rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        blockquote {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-color);
+            margin: 1.5rem 0;
+            padding: 1rem 1.2rem;
+            border-radius: 0 8px 8px 0;
+            color: #1e40af;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            margin-top: 3rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="blog-thuat-toan.html">&larr; Quay lại danh sách Blog Thuật toán</a>
+    </header>
+
+    <div class="container">
+        <h1>Thuật toán là gì? Hiểu bản chất để bước chân vào thế giới Lập trình thi đấu</h1>
+        <div class="post-meta">
+            Tác giả: <strong>VinhBlogTeam</strong> | Chuyên mục: Blog Thuật toán | Ngày đăng: 08/09/2026
+        </div>
+
+        <p>Chào mọi người! Chào mừng đến với bài viết mở màn chuyên mục <strong>Blog Thuật toán</strong> trên <strong>VinhBlogCP.com</strong>.</p>
+        
+        <p>Khi mới bắt đầu học lập trình, hẳn là ai cũng từng nghe qua cụm từ <em>"thuật toán"</em> (algorithm). Vậy rốt cuộc thuật toán là gì? Tại sao nó lại là "linh hồn" của mọi chương trình máy tính, đặc biệt là trong Lập trình thi đấu (Competitive Programming - CP)? Chúng ta hãy cùng tìm hiểu ngay sau đây nhé!</p>
+
+        <h2>1. Định nghĩa dễ hiểu về thuật toán</h2>
+        <p>Hiểu một cách đơn giản nhất: <strong>Thuật toán là một tập hợp hữu hạn các bước hướng dẫn cụ thể để giải quyết một bài toán hoặc thực hiện một nhiệm vụ nào đó.</strong></p>
+        <p>Giống như khi nấu một món ăn, bạn cần có công thức:</p>
+        <ul>
+            <li>Sơ chế nguyên liệu gì?</li>
+            <li>Cho cái gì vào trước, cái gì vào sau?</li>
+            <li>Nấu trong bao lâu thì tắt bếp?</li>
+        </ul>
+        <p>Mỗi bước trong công thức nấu ăn đó chính là một bước của thuật toán. Máy tính cũng vậy, nó rất "ngu ngốc" vì tự nó chẳng biết làm gì cả, bạn phải đưa cho nó một tập hợp các chỉ thị (thuật toán) rõ ràng, nó mới thực hiện chính xác được.</p>
+
+        <h2>2. Ví dụ thực tế: Bài toán tìm kiếm</h2>
+        <p>Giả sử bạn có một cuốn danh bạ điện thoại dày cộm gồm 1.000 trang và bạn cần tìm số điện thoại của bạn "An".</p>
+        <ul>
+            <li><strong>Cách 1 (Thuật toán duyệt tuần tự - Linear Search):</strong> Bạn mở từ trang 1, nhìn xem có tên An không. Nếu không, lật sang trang 2, trang 3... cứ thế cho đến hết 1.000 trang. <br><em>Nhận xét:</em> Cách này cực kỳ chậm nếu danh bạ dày. Trong lập trình, độ phức tạp thời gian của cách này là $O(n)$ (với $n$ là số trang).</li>
+            <li><strong>Cách 2 (Thuật toán tìm kiếm nhị phân - Binary Search):</strong> Vì danh bạ đã được sắp xếp theo thứ tự bảng chữ cái, bạn mở ngay trang giữa (trang 500). Xem tên ở trang giữa đứng trước hay sau chữ "A". Nếu ở nửa sau, bạn loại bỏ hoàn toàn nửa đầu và chỉ tập trung tìm ở nửa sau từ trang 501 đến 1000. Cứ lặp lại việc chia đôi như vậy, số trang cần tìm sẽ giảm đi một nửa sau mỗi bước!<br><em>Nhận xét:</em> Cách này cực kỳ nhanh. Thay vì dò 1.000 lần, bạn chỉ mất tối đa khoảng 10 lần lật sách là tìm thấy! Độ phức tạp là $O(\log n)$.</li>
+        </ul>
+
+        <blockquote>
+            <strong>Bài học rút ra:</strong> Cùng một bài toán, nếu chọn <strong>thuật toán tối ưu</strong>, chương trình của bạn sẽ chạy nhanh hơn hàng nghìn, hàng triệu lần. Đây chính là mục tiêu tối thượng của Lập trình thi đấu!
+        </blockquote>
+
+        <h2>3. Các đặc điểm cốt lõi của một thuật toán chuẩn</h2>
+        <p>Một dãy các câu lệnh muốn được công nhận là thuật toán thì phải thỏa mãn các yếu tố sau:</p>
+        <ol>
+            <li><strong>Tính chính xác:</strong> Các bước thực hiện phải rõ ràng, không mơ hồ để máy tính hiểu được.</li>
+            <li><strong>Tính hữu hạn:</strong> Thuật toán phải dừng lại sau một số bước hữu hạn lần thực hiện (tránh bị lặp vô tận - infinite loop).</li>
+            <li><strong>Đầu vào (Input):</strong> Có thể có không hoặc nhiều dữ liệu đầu vào.</li>
+            <li><strong>Đầu ra (Output):</strong> Phải sinh ra ít nhất một kết quả sau khi chạy xong.</li>
+        </ol>
+
+        <h2>4. Tại sao dân Lập trình thi đấu (CP) lại "nghiện" thuật toán?</h2>
+        <p>Trong các kỳ thi như Học sinh giỏi Tin học hay Tin học trẻ, đề bài thường cho giới hạn thời gian (Time Limit) rất ngặt nghèo, ví dụ máy tính chỉ cho phép chạy trong vòng <code>1.0 giây</code> cho dữ liệu $n = 10^6$.</p>
+        <ul>
+            <li>Nếu bạn dùng thuật toán ngây thơ (Brute Force) giống Cách 1 ở trên, máy tính sẽ phải tính toán hàng tỉ phép tính và bị báo lỗi <strong>Time Limit Exceeded (TLE)</strong>.</li>
+            <li>Nếu bạn biết áp dụng các thuật toán và cấu trúc dữ liệu thông minh (như Quy hoạch động, Cây phân đoạn, Two Pointers...), chương trình chỉ mất vài phần nghìn giây là chạy xong.</li>
+        </ul>
+        <p>Cảm giác nghĩ ra một thuật toán tối ưu, viết code ngắn gọn rồi nộp lên hệ thống hiện lên dòng chữ xanh <strong>Accepted (AC)</strong> chính là niềm vui lớn nhất của những lập trình viên thi đấu!</p>
+
+        <h2>5. Tổng kết</h2>
+        <p>Thuật toán không phải là thứ gì đó quá siêu hình hay xa vời, nó đơn giản là <strong>tư duy logic để giải quyết vấn đề</strong>. Càng luyện tập nhiều, bộ não của bạn sẽ càng nhạy bén trong việc nhìn ra hướng đi cho các bài toán khó.</p>
+        
+        <p>Hẹn gặp lại các bạn ở các bài viết tiếp theo trong chuyên mục <strong>Blog Thuật toán</strong> của <strong>VinhBlogTeam</strong> nhé! Đừng quên nếu bạn có bài giải hay, hãy đóng góp qua GitHub Issues theo đúng quy định nha.</p>
+    </div>
+
+    <footer>
+        &copy; 2026 VinhBlogCP.com. Powered by GitHub Pages.
+    </footer>
+
+</body>
+</html>
