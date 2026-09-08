@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Thuật Toán - VinhBlogCP.com</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+        }
+        header a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        header a:hover {
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .post-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            transition: transform 0.2s;
+        }
+        .post-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        }
+        .post-title {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .post-title:hover {
+            color: var(--accent-color);
+        }
+        .post-meta {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 0.8rem;
+        }
+        .post-snippet {
+            font-size: 0.95rem;
+            color: #475569;
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            margin-top: 3rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💡 Blog Thuật Toán</h1>
+        <a href="index.html">&larr; Quay lại trang chủ</a>
+    </header>
+
+    <div class="container">
+        <!-- Danh sách bài viết trong mục -->
+        <div class="post-card">
+            <a href="thuat-toan-la-gi.html" class="post-title">Thuật toán là gì? Hiểu bản chất để bước chân vào thế giới Lập trình thi đấu</a>
+            <div class="post-meta">Tác giả: <strong>VinhBlogTeam</strong> | Ngày đăng: 08/09/2026</div>
+            <p class="post-snippet">Tìm hiểu định nghĩa cơ bản về thuật toán, ví dụ thực tế qua bài toán tìm kiếm và lý do tại sao dân lập trình thi đấu (CP) lại cần tối ưu thuật toán.</p>
+        </div>
+
+        <!-- Sau này có bài mới, Vinh chỉ cần copy block .post-card dán thêm vào đây -->
+    </div>
+
+    <footer>
+        &copy; 2026 VinhBlogCP.com. Powered by GitHub Pages.
+    </footer>
+
+</body>
+</html>
